@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sameer | 3D Artist</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+body{
+    background:#0b0b0b;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    width:100%;
+    padding:15px 50px;
+    background:rgba(0,0,0,0.7);
+    backdrop-filter: blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:999;
+}
+nav h1{
+    color:#00ffd5;
+}
+nav a{
+    color:#fff;
+    margin-left:25px;
+    text-decoration:none;
+    transition:0.3s;
+}
+nav a:hover{
+    color:#00ffd5;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:radial-gradient(circle at top, #002b2b, #000);
+}
+.hero h2{
+    font-size:3.5rem;
+}
+.hero span{
+    color:#00ffd5;
+}
+.hero p{
+    margin-top:15px;
+    font-size:1.2rem;
+    opacity:0.8;
+}
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    border-radius:30px;
+    background:#00ffd5;
+    color:#000;
+    font-weight:bold;
+    text-decoration:none;
+    box-shadow:0 0 30px #00ffd5;
+    transition:0.3s;
+}
+.btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 60px #00ffd5;
+}
+
+/* SECTIONS */
+section{
+    padding:80px 10%;
+}
+.title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:40px;
+}
+
+/* SERVICES */
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+.card{
+    background:#111;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(0,255,213,0.2);
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 40px rgba(0,255,213,0.6);
+}
+.card h3{
+    color:#00ffd5;
+    margin-bottom:10px;
+}
+
+/* PORTFOLIO */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+.gallery div{
+    height:200px;
+    background:linear-gradient(135deg,#00ffd5,#004d4d);
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    color:#000;
+    box-shadow:0 0 25px rgba(0,255,213,0.5);
+}
+
+/* CONTACT */
+.contact form{
+    max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+.contact input,.contact textarea{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+}
+.contact button{
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    background:#00ffd5;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 0 30px #00ffd5;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    opacity:0.6;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>Sameer 3D</h1>
+<div>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#work">Work</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero" id="home">
+<div>
+<h2>Hi, I'm <span>Sameer</span></h2>
+<p>Professional 3D Artist | Modeling • Rendering • Animation</p>
+<a href="mailto:yourmail@gmail.com" class="btn">Hire Me</a>
+</div>
+</section>
+
+<section id="services">
+<h2 class="title">My Services</h2>
+<div class="services">
+<div class="card">
+<h3>3D Modeling</h3>
+<p>High-quality models for games, products & architecture.</p>
+</div>
+<div class="card">
+<h3>3D Rendering</h3>
+<p>Realistic lighting & photorealistic renders.</p>
+</div>
+<div class="card">
+<h3>Animation</h3>
+<p>Smooth and professional animations.</p>
+</div>
+</div>
+</section>
+
+<section id="work">
+<h2 class="title">My Work</h2>
+<div class="gallery">
+<div>Project 1</div>
+<div>Project 2</div>
+<div>Project 3</div>
+<div>Project 4</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2 class="title">Contact Me</h2>
+<form action="mailto:yourmail@gmail.com" method="post" enctype="text/plain">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="5" placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+</section>
+
+<footer>
+© 2025 Sameer | 3D Freelance Artist
+</footer>
+
+</body>
+</html>
